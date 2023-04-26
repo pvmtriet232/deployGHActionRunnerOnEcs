@@ -1,7 +1,7 @@
 create-cluster: # create ecs cluster
-	KEY_PAIR=NewKeyPair
+	KEY_PAIR = NewKeyPair
     ecs-cli up \
-      --keypair $KEY_PAIR  \
+      --keypair $(KEY_PAIR)  \
       --capability-iam \
       --size 1 \
       --instance-type t2.micro \
