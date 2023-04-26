@@ -4,7 +4,7 @@ KEY_PAIR=tutorial-cluster
       --keypair $KEY_PAIR  \
       --capability-iam \
       --size 1 \
-      --instance-type t3.micro \
+      --instance-type t2.micro \
       --tags project=tutorial-cluster,owner=raphael \
       --cluster-config tutorial \
       --ecs-profile tutorial
