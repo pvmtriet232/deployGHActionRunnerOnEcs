@@ -1,17 +1,10 @@
-version: '3.3'
+version: '3.9'
+
 services:
-    run:
-        hostname: 968756aed38e
-        user: runner
-        environment:
-            - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/runner/.local/bin/'
-            - DEBIAN_FRONTEND=noninteractive
-            - HOME=/home/runner
-            - RUNNER_ASSETS_DIR=/runnertmp
-            - RUNNER_TOOL_CACHE=/opt/hostedtoolcache
-            - ImageOS=ubuntu20
-        restart: no
-        labels:
-            - org.opencontainers.image.ref.name=ubuntu
-            - org.opencontainers.image.version=20.04
-        image: run
+  myapp:
+    image: pvmtriet233/summerwind-gh-action-runner:latest
+    stdin_open: true
+    tty: true
+    working_dir: /actions-runner
+    # command: sh -c "./run.sh"
+    entrypoint: sh -c "./run.sh"
