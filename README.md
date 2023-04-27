@@ -36,6 +36,7 @@ In this repository, I deployed runners to ECS cluster using shell scripting, doc
 -   Pull this [images](https://hub.docker.com/r/summerwind/actions-runner) in Docker,
 -   Install github action on it
 -   Run a demo action on this container to makesure it works
+-   Run docker commit to create a image from a container (alternatively use Dockerfile), then tag the image
 -   Push image to docker.io
 ## Step 2: install and configure ecs-cli
 -   Install [ecs-cli](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI.html) 
