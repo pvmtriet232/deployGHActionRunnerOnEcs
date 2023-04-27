@@ -38,8 +38,8 @@ In this repository, I deployed runners to ECS cluster using shell scripting, doc
 -   Run a demo action on this container to makesure it works
 -   Push image to docker.io
 ## Step 2: install and configure ecs-cli
--   install [ecs-cli](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI.html) 
--   run configure.sh with your credentials
+-   Install [ecs-cli](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI.html) 
+-   Run configure.sh with your credentials
 ## Step 3: create ECS cluster and compose docker-compose.yml to ECS cluster
 
 -   create cluster with create-cluster specified in Makefile:
