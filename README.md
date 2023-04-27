@@ -42,12 +42,12 @@ In this repository, I deployed runners to ECS cluster using shell scripting, doc
 -   Run configure.sh with your credentials
 ## Step 3: create ECS cluster and compose docker-compose.yml to ECS cluster
 
--   create cluster with create-cluster specified in Makefile:
+-   Create cluster with create-cluster specified in Makefile:
 ```bash
 make create-cluster
 ```
--   run image in ECS cluster with ecs-compose-up:
+-   Run image in ECS cluster with ecs-compose-up:
 ```bash
 make ecs-compose-up
 ```
--   clean up.
+-   Clean up.
